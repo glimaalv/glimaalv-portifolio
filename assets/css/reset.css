@@ -1,0 +1,78 @@
+/* 1. Box-sizing global para comportamento previsível de larguras e alturas */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remoção de margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Configurações padrão do corpo da página (body) */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Mídia (imagens, vídeos) responsiva por padrão */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remoção de estilos em listas para evitar recuos indesejados */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 6. Herdando fontes nativas em formulários */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Evitar quebra de texto (overflow) em parágrafos e cabeçalhos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Criar um contexto de empilhamento root para isolamento */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 9. Estilização base para links (opcional, dependendo do design) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 10. Respeitar as preferências do usuário de acessibilidade (movimento reduzido) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
