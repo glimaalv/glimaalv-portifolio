@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,30 @@
   </head>
   <body>
     <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__brand">
         <img
           class="brand__logo"
@@ -24,7 +48,9 @@
           alt="Logo GL"
         />
       </div>
-      <i id="toggleTheme" class="bi bi-sunrise-fill"></i>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sunset"></i>
+      </div>
     </header>
     <nav class="nav--mobile">
       <ul class="menu menu--mobile">
@@ -54,6 +80,67 @@
         </li>
       </ul>
     </nav>
-    <h1>Gustavo Alves</h1>
+    <main>
+      <div class="main__content1">
+        <h1><b>soluções eficientes &</b> desenvolvimento full-stack</h1>
+        <p>Gustavo Alves, São Paulo - SP, Desenvolvedor Full-Stack.</p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/glimaalv">
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/glimaalv/">
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="btn btn--primary">
+          <span>ver projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>
+      </div>
+    </main>
+    <section class="skills">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="assets/images/technologies/java-svgrepo-com.svg"
+            alt="Logo Java"
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+            alt="Logo JS"
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="assets/images/technologies/python-127-svgrepo-com.svg"
+            alt="Logo Python"
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="assets/images/technologies/mysql-svgrepo-com.svg"
+            alt="Logo MySQL"
+          />
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <p>
+        © 2026. Todos os direitos reservados. Gustavo Alves. Desenvolvido por
+        <a href="https://github.com/glimaalv">glimaalv</a>
+      </p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
