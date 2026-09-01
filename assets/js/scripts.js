@@ -37,10 +37,10 @@ menuLinks.forEach((item) => {
 });
 
 // verificação e salvar o tema dark ou light no navegador
-const toggleTheme = document.getElementById("toggleTheme");
-const rootHtml = document.documentElement;
-const accordionHeaders = document.querySelectorAll(".accordion__header");
-const menuLinks = document.querySelectorAll(".menu__link");
+// const toggleTheme = document.getElementById("toggleTheme");
+// const rootHtml = document.documentElement;
+// const accordionHeaders = document.querySelectorAll(".accordion__header");
+// const menuLinks = document.querySelectorAll(".menu__link");
 
 // 1. Verificação inicial: Checa se há um tema salvo no localStorage
 const savedTheme = localStorage.getItem("theme");
