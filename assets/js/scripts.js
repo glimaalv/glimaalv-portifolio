@@ -1,23 +1,10 @@
-// botão toggleTheme para alternar entre os temas dark e light
+// Seletores globais
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 const accordionHeaders = document.querySelectorAll(".accordion__header");
 const menuLinks = document.querySelectorAll(".menu__link");
 
-function changeTheme() {
-  const currentTheme = rootHtml.getAttribute("data-theme");
-
-  currentTheme === "dark"
-    ? rootHtml.setAttribute("data-theme", "light")
-    : rootHtml.setAttribute("data-theme", "dark");
-
-  toggleTheme.classList.toggle("bi-sunset");
-  toggleTheme.classList.toggle("bi-sunrise");
-}
-
-toggleTheme.addEventListener("click", changeTheme);
-
-// ativar e desativar a section selecionada no header
+// Ativar e desativar a section selecionada no header
 accordionHeaders.forEach((header) => {
   header.addEventListener("click", () => {
     const accordionItem = header.parentElement;
@@ -36,12 +23,6 @@ menuLinks.forEach((item) => {
   });
 });
 
-// verificação e salvar o tema dark ou light no navegador
-// const toggleTheme = document.getElementById("toggleTheme");
-// const rootHtml = document.documentElement;
-// const accordionHeaders = document.querySelectorAll(".accordion__header");
-// const menuLinks = document.querySelectorAll(".menu__link");
-
 // 1. Verificação inicial: Checa se há um tema salvo no localStorage
 const savedTheme = localStorage.getItem("theme");
 
@@ -59,7 +40,7 @@ if (savedTheme) {
   }
 }
 
-// 2. Função de alteração
+// 2. Função de alteração (com cache)
 function changeTheme() {
   const currentTheme = rootHtml.getAttribute("data-theme");
 
