@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gustavo Alves | Portifolio</title>
+    <title>Gustavo Alves | Portifólio</title>
     <meta
       name="description"
       content="Portifólio do desenvolvedor Gustavo Alves para compartilhar projetos desenvolvidos e habilidades"
@@ -80,7 +80,7 @@
         </li>
       </ul>
     </nav>
-    <main>
+    <main id="home">
       <div class="main__content1">
         <h1><b>soluções eficientes &</b> desenvolvimento full-stack</h1>
         <p>Gustavo Alves, São Paulo - SP, Desenvolvedor Full-Stack.</p>
@@ -102,43 +102,385 @@
         </button>
       </div>
     </main>
-    <section class="skills">
+
+    <section class="technologies">
       <h2>Conhecimento nas principais tecnologias do mercado</h2>
-      <ul class="skills__list">
-        <li class="skills__item">
+      <ul class="technologies__list">
+        <li class="technologies__item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/java-svgrepo-com.svg"
             alt="Logo Java"
           />
         </li>
-        <li class="skills__item">
+        <li class="technologies__item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/javascript-16-svgrepo-com.svg"
             alt="Logo JS"
           />
         </li>
-        <li class="skills__item">
+        <li class="technologies__item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/python-127-svgrepo-com.svg"
             alt="Logo Python"
           />
         </li>
-        <li class="skills__item">
+        <li class="technologies__item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/mysql-svgrepo-com.svg"
             alt="Logo MySQL"
           />
         </li>
       </ul>
     </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/project-bikcraft.png"
+            alt="Capa Josi's Box"
+          />
+          <div class="card__body">
+            <h3 class="card__title">bikcraft loja virtual</h3>
+            <p class="card__description">Ecommerce de Bicicletas.</p>
+            <ul class="card__list">
+              <li class="card__item">Busca de endereços (API);</li>
+              <li class="card__item">Seleção dinâmica de produto e seguro;</li>
+              <li class="card__item">Formulário de orçamento.</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html5-logo-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/api-svgrepo-com.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img
+            class="card__cover"
+            src="assets/images/projects/project-discord.png"
+            alt="Capa Archstil"
+          />
+          <div class="card__body">
+            <h3 class="card__title">site discord</h3>
+            <p class="card__description">
+              Clone para prática de conceitos web.
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Otimização de SEO;</li>
+              <li class="card__item">Prática de Flexbox;</li>
+              <li class="card__item">Prática de Grid Layout.</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/html5-logo-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/css-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/javascript-16-svgrepo-com.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/adianalima.mk_freelance.jpeg"
+            alt="Capa Games Store"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Em Andamento</h3>
+            <p class="card__description">
+              Desenvolvimento do meu primeiro projeto como freelancer.
+            </p>
+            <!-- <ul class="card__list">
+              <li class="card__item">Listagem de favoritos;</li>
+              <li class="card__item">Carrinho de compras;</li>
+              <li class="card__item">Filtragem por preço e categoria.</li>
+            </ul>
+            <ul class="technologies__list">
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Angular.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/TypeScript.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies__item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <button class="btn">
+                <span>Repositório</span>
+              </button> -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <a href="https://github.com/glimaalv">
+          <button class="btn btn--primary">
+            <span>Ver Todos os Projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img class="about__photo" src="assets/images/avatar.jpg" alt="" />
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>
+            Formado em Análise e Desenvolvimento de Sistemas com uma base sólida
+            em engenharia de software e um grande interesse em backend e
+            desenvolvimento web. Minha experiência inclui funções de suporte
+            técnico e gerenciamento de TI. Estou comprometido com o aprendizado
+            contínuo, explorando ativamente novas tecnologias por meio de cursos
+            on-line e networking. Se você precisa de um desenvolvedor motivado
+            que possa contribuir com ideias inovadoras e concretizar seus
+            projetos, vamos discutir como posso ajudar a atingir seus objetivos.
+          </p>
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Avançado (Certificado TOEIC) | Espanhol: Básico</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/glimaalv/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="">
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3>Formação</h3>
+            <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+            <span>Jun 2023 - Jun 2026</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>FATEC - Guarulhos</span>
+            </div>
+          </div>
+          <div class="row2">
+            <h3>Experiências</h3>
+            <h4>Gestor de TI - PJ</h4>
+            <span>Airsupply. Fev 2025 - Fev. 2026</span>
+            <span>
+              Integrações entre sistemas como ESL e Intellipost via API,
+              Monitoramento contínuo de infraestrutura, Gerenciamento de Tickets
+              e suporte em tempo integral a toda equipe interna e de campo.
+            </span>
+            <ul class="about__list">
+              <li class="about__item">Integrações entre sistemas;</li>
+              <li class="about__item">
+                Suporte Técnico N1 a N3 (Windows, Linux e Amazon Azure);
+              </li>
+              <li class="about__item">
+                Projetos e Suporte de redes de computadores.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Alura. Jun 2025. 3h.</p>
+                <p>
+                  O que é versionamento de código, Git e GitHub. Como instalar e
+                  configurar o Git em diferentes sistemas operacionais e como
+                  autenticar via Token e SSH. Como manusear repositórios, indo
+                  desde a criação e clonagem até o gerenciamento de branches,
+                  passando por todas as etapas de salvar, desfazer e sincronizar
+                  alterações com o repositório remoto.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Algoritmos e Lógica de Programação</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Udemy. Maio 2025. 30h</p>
+                <p>
+                  Um curso completo de algoritmos e lógica de programação com
+                  centenas de exercícios práticos abordando as principais
+                  linguagens do mercado, como: C, C++, C#, Java, JavaScript e
+                  Python.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Bootcamp Santander Front-End</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>Digital Innovation One. Ago 2026. 100h.</p>
+                <p>
+                  Um bootcamp promovido em parceria entre o Santander e a DIO
+                  onde foram abordados desde conceitos como HTML Semântico, SEO,
+                  Web Scrapping, passando por Posicionamento de Elementos com
+                  CSS utilizando FlexBox e Grid Layout até conceitos como Lógica
+                  de Programação em JavaScript, JSON, Consumo de APIs,
+                  Orientação a Protótipos, Manipulação de Listas e
+                  Assincronismo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contate-me</h2>
+      <p>
+        Estou disponível para serviços e novas conexões. Contate-me via e-mail e
+        conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a
+            class="menu__link"
+            href="https://github.com/elidianaandrade"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link"
+            href="https://www.linkedin.com/in/glimaalv/"
+            target="_blank"
+          >
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <!-- <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a> -->
+        </li>
+      </ul>
+      <a href="mailto:gusta.pessoal02@gmial.com">
+        <button class="btn btn--primary">
+          <span class="email">gusta.pessoal02@gmail.com</span>
+        </button>
+      </a>
+    </section>
+
     <footer>
       <p>
-        © 2026. Todos os direitos reservados. Gustavo Alves. Desenvolvido por
-        <a href="https://github.com/glimaalv">glimaalv</a>
+        © 2023. Todos os direitos reservados a
+        <a href="https://github.com/elidianaandrade" target="_blank"
+          >Gustavo Alves</a
+        >.
       </p>
     </footer>
     <script src="assets/js/scripts.js"></script>
