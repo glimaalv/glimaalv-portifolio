@@ -71,16 +71,18 @@ class TextScramble {
   }
 
   setText(newText) {
-    // Pega o texto atual, ignorando as tags <br> para contar os caracteres
-    const oldText = this.el.innerText;
-    const length = Math.max(oldText.length, newText.length);
+    // O .normalize('NFC') garante que caracteres e acentos separados se tornem um só
+    const oldText = this.el.innerText.normalize("NFC");
+    const targetText = newText.normalize("NFC");
+
+    const length = Math.max(oldText.length, targetText.length);
     const promise = new Promise((resolve) => (this.resolve = resolve));
     this.queue = [];
 
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || "";
-      const to = newText[i] || "";
-      // Controla a velocidade de embaralhamento de cada letra
+      const to = targetText[i] || ""; // Certifique-se de usar a nova variável targetText aqui
+
       const start = Math.floor(Math.random() * 40);
       const end = start + Math.floor(Math.random() * 40);
       this.queue.push({ from, to, start, end });
