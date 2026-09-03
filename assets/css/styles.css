@@ -42,7 +42,9 @@ html[data-theme="dark"] .technologies__logo {
 
 /* Classe do embaralhamento no H1 */
 .dud {
-  color: #757575;
+  font-size: 5rem;
+  font-weight: 200;
+  color: var(--text-color);
   opacity: 0.7;
 }
 
