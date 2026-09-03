@@ -40,6 +40,12 @@ html[data-theme="dark"] .technologies__logo {
   filter: invert(80%);
 }
 
+/* Classe do embaralhamento no H1 */
+.dud {
+  color: #757575;
+  opacity: 0.7;
+}
+
 * {
   margin: 0;
   padding: 0;
