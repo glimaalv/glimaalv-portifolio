@@ -42,7 +42,7 @@ html[data-theme="dark"] .technologies__logo {
 
 /* Classe do embaralhamento no H1 */
 .dud {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 200;
   color: var(--text-color);
   opacity: 0.7;
@@ -546,6 +546,10 @@ footer p {
 
 /* Responsividade */
 @media (min-width: 768px) {
+  .dud {
+    font-size: 5rem;
+  }
+
   .header {
     position: fixed;
     border-bottom: 1px solid var(--primary-border-color);
@@ -695,6 +699,10 @@ footer p {
 
 @media (min-width: 1400px) {
   h1 {
+    font-size: 6.25rem;
+  }
+
+  .dud {
     font-size: 6.25rem;
   }
 
